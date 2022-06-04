@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
 public class minigamespawner : MonoBehaviour
 {
 
-
+ public GameObject myself;
     public GameObject CanvasA;
 public GameObject CanvasB;
 public GameObject CanvasC;
@@ -21,6 +21,7 @@ public GameObject CanvasD;
 
   void OnTriggerEnter(Collider other)
     {
+        myself.SetActive(false);    
         CanvasA.SetActive(true);
   CanvasB.SetActive(true);
     CanvasC.SetActive(false);
@@ -32,7 +33,7 @@ public GameObject CanvasD;
  
  void hello222()
     {
-       
+   myself.SetActive(false);    
  CanvasA.SetActive(true);
   CanvasB.SetActive(true);
     CanvasC.SetActive(false);

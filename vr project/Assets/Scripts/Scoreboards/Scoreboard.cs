@@ -12,10 +12,21 @@ public AudioSource stage4songe;
 public Text entryNameA;
  public GameObject sendtext;
 public Text entryScoreA;
+public Text entryGradeA;
+public Text entryAddA;
+public Text entryMinusA;
+public Text entryMultiplyA;
+public Text entryDivisionA;
 public string entryNameB;
 public string entryNameAtext;
 public string entryScoreB;
 public double entryScoreC;
+public string entryGradeB;
+public string entryAddB;
+public string entryMinusB;
+public string entryMultiplyB;
+public string entryDivisionB;
+
 
         [SerializeField] private int maxScoreboardEntries = 5;
         [SerializeField] private Transform highscoresHolderTransform = null;
@@ -48,11 +59,22 @@ public double entryScoreC;
    entryNameB = entryNameA.text;
         entryNameAtext = entryScoreA.text;
         entryScoreB = entryScoreA.text;
+       entryGradeB = entryGradeA.text;
+entryAddB = entryAddA.text;
+entryMinusB = entryMinusA.text;
+entryMultiplyB = entryMultiplyA.text;
+entryDivisionB = entryDivisionA.text;
 
             AddEntry(new ScoreboardEntryData()
             {
                 entryName =  entryNameB,
-                entryScore = entryScoreB
+                entryScore = entryScoreB,
+                 entryGrade = entryGradeB,
+                 entryAdd = entryAddB,
+                 entryMinus = entryMinusB,
+                 entryMultiply = entryMultiplyB,
+                 entryDivision = entryDivisionB
+
             });
         }
 

@@ -36,11 +36,7 @@ void Start()
         stage5songe.Stop();
     CanvasA.SetActive(true);
    myself.SetActive(false);
-       victim.transform.position = teleportend.transform.position;
-PlayerMovingw.GetComponent<Lookaround>().enabled = false;
-   Cursor.lockState = CursorLockMode.None;
-      Cursor.visible = true;
-
+ 
     }
        
     
